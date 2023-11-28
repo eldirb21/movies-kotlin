@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Movies Kotlin</string>
+    <string-array name="movie_options">
+        <item>Option 1</item>
+        <item>Option 2</item>
+        <!-- Add more items as needed -->
+    </string-array>
+</resources>

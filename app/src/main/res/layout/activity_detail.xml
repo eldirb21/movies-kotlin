@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Add your views to display movie details -->
+
+    <ImageView
+        android:id="@+id/movieBackgroundImageView"
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:alpha="0.5"
+        android:background="@color/black"
+        android:scaleType="centerCrop"
+        android:src="@drawable/placeholder_image" />
+
+    <ImageView
+        android:id="@+id/moviePosterImageView"
+        android:layout_width="300dp"
+        android:layout_height="313dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/purple_200"
+        android:scaleType="centerCrop"
+        android:src="@drawable/placeholder_image" />
+
+    <TextView
+        android:id="@+id/movieTitleTextView"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/movieBackgroundImageView"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_width="233dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:text="Hallo world"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/movieDateTextView"
+        android:layout_width="233dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/movieTitleTextView"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:drawablePadding="2dp"
+        android:text="2023-09-27" />
+
+    <TextView
+        android:id="@+id/movieDescTextView"
+        android:layout_width="388dp"
+        android:layout_height="97dp"
+        android:layout_below="@id/movieDateTextView"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:drawablePadding="2dp"
+        android:maxLines="2"
+        android:text="Description Description Description Description Description Description Description Description Description " />
+
+<!--    <Button-->
+<!--        android:id="@+id/button"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_marginStart="48dp"-->
+<!--        android:layout_marginBottom="117dp"-->
+<!--        android:background="@color/white"-->
+<!--        android:text="Button"-->
+<!--        android:textColor="@color/black" />-->
+
+
+</RelativeLayout>
