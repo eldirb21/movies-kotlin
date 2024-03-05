@@ -8,6 +8,7 @@ import android.widget.ImageView
 import android.widget.Spinner
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.Toolbar
 import com.bumptech.glide.Glide
 import com.eldiro.movieskotlin.models.MovieResponse
 import com.eldiro.movieskotlin.models.Movies
@@ -21,7 +22,19 @@ class DetailActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_detail)
+        supportActionBar?.hide()
 
+//        val toolbar = findViewById<Toolbar>(R.id.toolbar);
+//        val toolbar : Toolbar = findViewById(R.id.toolbar)
+//        setSupportActionBar(toolbar)
+        supportActionBar?.apply {
+            title = "Toolbar Back Button Example"
+
+            // show back button on toolbar
+            // on back button press, it will navigate to parent activity
+            setDisplayHomeAsUpEnabled(true)
+            setDisplayShowHomeEnabled(true)
+        }
 //        val spinner: Spinner = findViewById(R.id.movieOptionsSpinner)
 
         ArrayAdapter.createFromResource(
